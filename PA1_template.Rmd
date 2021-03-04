@@ -75,7 +75,7 @@ median(total.steps)
 ```
 
 ## Are there differences in activity patterns between weekdays and weekends?
-```{r}
+```{r, cache=TRUE}
 day_of_week <- function(date) {
     day <- weekdays(date)
     if (day %in% c("понеділок", "вівторок", "середа", "четвер", "п'ятниця"))
